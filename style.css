@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'steph' ;
+    src: url(/fonts/steph-font-bold.ttf);
+}
+@theme{
+    --color-armna : #1DA1F2;
+    --font-steph : 'steph';
+}
