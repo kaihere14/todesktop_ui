@@ -32,23 +32,32 @@ window.addEventListener('resize',()=>{
 
 
 function setUpIntersectionObserver(element, isLTR, speed) {
+    let ticking = false;
+
     const intersectionCallback = (entries) => {
         const isIntersecting = entries[0].isIntersecting;
-        if(isIntersecting){
-            document.addEventListener('scroll',scrollHandler)
-        }else{
-            document.removeEventListener('scroll',scrollHandler)
+        if (isIntersecting) {
+            document.addEventListener('scroll', scrollHandler);
+        } else {
+            document.removeEventListener('scroll', scrollHandler);
         }
     };
+
     const observer = new IntersectionObserver(intersectionCallback);
     observer.observe(element);
 
-    function scrollHandler(){
-        const translateX = (window.innerHeight - element.getBoundingClientRect().top)*speed;
-        if(isLTR){
-        element.style.transform= `translateX(${translateX}px)`
-        }else{
-            element.style.transform= `translateX(-${translateX}px)`
+    function scrollHandler() {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const translateX = (window.innerHeight - element.getBoundingClientRect().top) * speed;
+                if (isLTR) {
+                    element.style.transform = `translateX(${translateX}px)`;
+                } else {
+                    element.style.transform = `translateX(-${translateX}px)`;
+                }
+                ticking = false;
+            });
+            ticking = true;
         }
     }
 }
