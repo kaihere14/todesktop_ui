@@ -1354,6 +1354,11 @@
       overflow: hidden;
     }
   }
+  .max-\[460px\]\:text-\[18px\] {
+    @media (width < 460px) {
+      font-size: 18px;
+    }
+  }
   .max-\[400px\]\:text-2xl {
     @media (width < 400px) {
       font-size: var(--text-2xl);
