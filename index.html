@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- Nav-bar -->
     <nav class="p-3 flex bg-white items-center justify-between">
         <div class="nav-right flex items-center space-x-1 pl-3">
             <div class="logo">
@@ -97,11 +98,13 @@
             </div>
         </div>
     </div>
+
+
     <!-- Main -->
     <main>
         <!-- Hero-Section -->
         <div id="hero"
-            class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-100 to-transparent flex flex-col items-center max-[710px]:items-start">
+            class="max-h-auto bg-gradient-to-b from-purple-50 via-orange-100 to-transparent flex flex-col items-center max-[710px]:items-start">
             <div
                 class="group yellow-bar bg-[#fdf6d0] flex items-center space-x-2 border-1 border-orange-200 h-fit rounded-[10px] p-1 mt-[3rem] hover:drop-shadow-md hover:-translate-y-1 transition-all duration-300 ml-7">
                 <i class="fa-solid fa-circle text-[10px] pl-2 text-[#f3ce49]"></i>
@@ -370,7 +373,99 @@
 </div>
     </main>
 
+
+    <!-- Feature -->
+     <div class="steps h-20 max-w-7xl px-6 py-12 pt-16 mx-auto lg:px-8 lg:pt-32 lg:mx-25">
+     <h2 class="text-5xl sm:font-semibold">How it Works</h2>
+     <div class="mt-20 rounded-xl border px-5 py-12 flex flex-col min-w-[67vw] bg-gray-50 lg:flex-row lg:min-w-[80vw]">
+        <div class="lg:mx-10">
+        <div class="div border w-fit py-1 px-4 rounded-md font-semibold bg-[#fdf6d0] text-[#69411c]">Step 1</div>
+        <div class="font-semibold mt-10 text-4xl">Bootstrap straight from your web app</div>
+        <div class="text-[1.5rem] mt-7 leading-9 text-gray-600">Copy and paste your web app url into ToDesktop. Customise your app design, app icon and window frame UI with no code.</div>
+
+        <div class="list pt-16 flex lg:space-x-10">
+            <div class="right">
+                <ul class="text-[1.4rem] font-light text-gray-500 max-[400px]:text-[18px]">
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Multiple Windows</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Menubar/tray menus</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Offline support</li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul class="text-[1.4rem] font-light text-gray-500 max-[400px]:text-[18px]">
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Customisable menus</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Launch on startup</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Tabs (Mac only)</li>
+                </ul>
+            </div>
+        </div>
+</div>
+        <div class="iconapp mt-20 mx-auto lg:mt-[8rem] lg:w-[90vw] lg:pl-[15%]">
+            <img class="min-w-[70%]" src="ToDesktop Assets/svg+xml;base64,PHN2ZyB3aWR0aD0iNDU2IiBoZWlnaHQ9IjM1NiIgdmlld0JveD0iMCAwIDQ1NiAzNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9InN2ZWx0ZS0xaTI5ODhrIj48ZyBjbGFzcz0iYW5pbWF0ZS1kZWxheTEgc3ZlbHRlLTFpMjk4OGsiPjxyZWN0I.svg" alt="">
+        </div>
+     </div>
+
+     <div class="mt-20 rounded-xl border px-5 py-12 flex flex-col min-w-[67vw] bg-gray-50 lg:flex-row lg:min-w-[80vw]">
+        <div class="lg:mx-10">
+        <div class="div border w-fit py-1 px-4 rounded-md font-semibold bg-[#fdf6d0] text-[#69411c]">Step 2</div>
+        <div class="font-semibold mt-10 text-4xl">Add desktop code to customise your web app</div>
+        <div class="text-[1.5rem] mt-7 leading-9 text-gray-600">No need to create a new repository, just add code from our desktop APIs to your codebase and get access to system level functionality.</div>
+
+        <div class="list pt-16 flex lg:space-x-10 max-[400px]:text-[18px]">
+            <div class="right">
+                <ul class="text-[1.4rem] font-light text-gray-500">
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Native notifications</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Application menu</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Dock/Icon</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">File system access</li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul class="text-[1.4rem] font-light text-gray-500">
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Global keyboard shortcuts</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Context menu</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">solated browser views</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">…plus more APIs in our docs</li>
+                </ul>
+            </div>
+        </div>
+</div>
+        <div class="iconapp mt-20 mx-auto lg:mt-[8rem] lg:w-[90vw] lg:pl-[15%]">
+            <img class="min-w-[70%]" src="ToDesktop Assets/svg+xml;base64,PHN2ZyB3aWR0aD0iNDU2IiBoZWlnaHQ9IjM1NiIgdmlld0JveD0iMCAwIDQ1NiAzNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9InN2ZWx0ZS0xaTI5ODhrIj48ZyBjbGFzcz0iYW5pbWF0ZS1kZWxheTEgc3ZlbHRlLTFpMjk4OGsiPjxyZWN0I.svg" alt="">
+        </div>
+     </div>
+
+     <div class="mt-20 rounded-xl border px-5 py-12 flex flex-col min-w-[67vw] bg-gray-50 lg:flex-row lg:min-w-[80vw]">
+        <div class="lg:mx-10">
+        <div class="div border w-fit py-1 px-4 rounded-md font-semibold bg-[#fdf6d0] text-[#69411c]">Step 3</div>
+        <div class="font-semibold mt-10 text-4xl">Publish 🚀</div>
+        <div class="text-[1.5rem] mt-7 leading-9 text-gray-600">One-click will publish your desktop app to your customers and give you a download link to put on your website.</div>
+
+        <div class="list pt-16 flex max-[400px]:text-[18px]">
+            <div class="right">
+                <ul class="text-[1.4rem] font-light text-gray-500">
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Super-fast global CDN</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Magic universal links</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Manage version numbers</li>
+                </ul>
+            </div>
+            <div class="left">
+                <ul class="text-[1.4rem] font-light text-gray-500">
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Download links on your domain</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Download analytics</li>
+                    <li class="py-2 underline relative pl-9 before:content-['✓'] before:absolute before:left-0">Native installers for all platforms</li>
+                </ul>
+            </div>
+        </div>
+</div>
+        <div class="iconapp mt-20 mx-auto lg:mt-[8rem] lg:w-[90vw] lg:pl-[15%]">
+            <img class="min-w-[70%]" src="ToDesktop Assets/svg+xml;base64,PHN2ZyB3aWR0aD0iNDU2IiBoZWlnaHQ9IjM1NiIgdmlld0JveD0iMCAwIDQ1NiAzNTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9InN2ZWx0ZS0xaTI5ODhrIj48ZyBjbGFzcz0iYW5pbWF0ZS1kZWxheTEgc3ZlbHRlLTFpMjk4OGsiPjxyZWN0I.svg" alt="">
+        </div>
+     </div>
+     </div>
     <script src="script.js"></script>
+
+    
 </body>
 
 </html>
