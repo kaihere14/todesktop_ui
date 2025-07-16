@@ -708,6 +708,16 @@
       margin-block: calc(var(--spacing) * 5);
     }
   }
+  .max-\[710px\]\:mt-2 {
+    @media (width < 710px) {
+      margin-top: calc(var(--spacing) * 2);
+    }
+  }
+  .max-\[710px\]\:mt-7 {
+    @media (width < 710px) {
+      margin-top: calc(var(--spacing) * 7);
+    }
+  }
   .max-\[710px\]\:ml-2 {
     @media (width < 710px) {
       margin-left: calc(var(--spacing) * 2);
