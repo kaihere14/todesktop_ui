@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-100: oklch(93.6% 0.032 17.717);
+    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-red-800: oklch(44.4% 0.177 26.899);
@@ -548,6 +549,9 @@
   .overflow-hidden {
     overflow: hidden;
   }
+  .overflow-x-hidden {
+    overflow-x: hidden;
+  }
   .overflow-y-auto {
     overflow-y: auto;
   }
@@ -591,6 +595,9 @@
   }
   .bg-indigo-600 {
     background-color: var(--color-indigo-600);
+  }
+  .bg-red-300 {
+    background-color: var(--color-red-300);
   }
   .bg-red-400 {
     background-color: var(--color-red-400);
@@ -1145,6 +1152,11 @@
   .md\:min-w-32 {
     @media (width >= 48rem) {
       min-width: calc(var(--spacing) * 32);
+    }
+  }
+  .md\:overflow-hidden {
+    @media (width >= 48rem) {
+      overflow: hidden;
     }
   }
   .md\:text-\[16px\] {
