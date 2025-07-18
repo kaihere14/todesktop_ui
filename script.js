@@ -4,6 +4,7 @@ const menue = document.querySelector('.mob-menue');
 const line1 = document.querySelector('.line1')
 const line2 = document.querySelector('.line2')
 const line3 = document.querySelector('.line3')
+const line4 = document.querySelector('.line4')
 let view = true;
 
 bar.addEventListener('click',()=>{
@@ -65,3 +66,4 @@ function setUpIntersectionObserver(element, isLTR, speed) {
 setUpIntersectionObserver(line1, true, 0.15);
 setUpIntersectionObserver(line2, false, 0.15);
 setUpIntersectionObserver(line3, true, 0.15);
+setUpIntersectionObserver(line4, true, 0.35);
