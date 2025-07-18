@@ -67,3 +67,4 @@ setUpIntersectionObserver(line1, true, 0.15);
 setUpIntersectionObserver(line2, false, 0.15);
 setUpIntersectionObserver(line3, true, 0.15);
 setUpIntersectionObserver(line4, true, 0.35);
+
