@@ -68,3 +68,17 @@ setUpIntersectionObserver(line2, false, 0.15);
 setUpIntersectionObserver(line3, true, 0.15);
 setUpIntersectionObserver(line4, true, 0.45);
 
+
+const dt = document.querySelectorAll('dt')
+
+let status = false;
+
+dt.forEach(element=>{
+    element.addEventListener('click',()=>{
+        const dt_aria = element.getAttribute('aria-controls')
+        const dd = document.getElementById(dt_aria)
+        let one  = element.querySelectorAll('i')[0];
+        dd.classList.toggle('hidden')
+        one.classList.toggle('-rotate-180')
+    })  
+})
